@@ -2,161 +2,274 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andie - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Andie Stokes — Portfolio</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
+
+    <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">Andie.</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#articles">Articles</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="nav-inner">
+            <div class="logo">Andie.</div>
+            <nav class="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#skills">Skills</a>
+                <a href="#articles">Articles</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a class="btn small" href="resume.pdf" target="_blank" rel="noopener">Download CV</a>
+            </div>
+        </div>
     </header>
 
-    <!-- Hero -->
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-content">
-            <h2>Hi, I’m Andie</h2>
-            <h1>I’m a certified project leader that drives projects forward with clarity, structure, and collaboration.
-            </h1>
-            <p>PMP · CSM · SAFe POPM | Project Management & Agile Solutions</p>
-            <div class="hero-buttons">
-                <a href="AndieStokes.pdf" class="btn-primary">Download Resume</a>
-                <a href="#contact" class="btn-secondary">Contact me</a>
+        <div class="hero-inner">
+            <div class="hero-left">
+                <h1>Andie Stokes</h1>
+                <p class="hero-sub">Project Manager · Scrum Master · Remote-first</p>
+                <p class="hero-lead">I create clarity and momentum for remote teams by using structure, empathy, and
+                    practical process.</p>
+                <div class="hero-ctas">
+                    <a href="resume.pdf" class="btn">Download Resume</a>
+                    <a href="#contact" class="btn outline">Contact me</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <img src="assets/profile.jpg" alt="Andie Stokes profile photo">
             </div>
         </div>
     </section>
 
-    <!-- About -->
+    <!-- ABOUT (optional short) -->
     <section class="about">
-        <img src="image1.JPG" alt="Andie at the lake">
-        <div class="about-text">
-            <h3>About me</h3>
-            <p>Marathon runner, scuba diver, kitesurfer, and snowboarder. I bring the same drive and focus from my
-                adventures into my work. Passionate about using technology to connect people, simplify processes, and
-                get results.</p>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Purple Magnet Productions <span>Project Manager</span></h3>
-            <p>2024 – Present | Remote</p>
-            <p>Coordinated production schedules, managed contractor relationships, and led weekly status report
-                meetings.</p>
-        </div>
-        <div class="job">
-            <h3>State of Alabama <span>Case Manager</span></h3>
-            <p>2023 – 2024 | Remote</p>
-            <p>Managed healthcare cases, coordinated with multidisciplinary teams, and improved client outcomes.</p>
-        </div>
-        <div class="job">
-            <h3>Private Academy <span>Literacy Coach</span></h3>
-            <p>2019 – 2023 | Korea</p>
-            <p>Designed curriculum, prepared students for language exams, and led cross-cultural learning experiences.
-            </p>
-        </div>
-        <div class="job">
-            <h3>CVS Health <span>Certified Pharmacy Technician</span></h3>
-            <p>2013 – 2019 | AL, TN, TX</p>
-            <p>Supported pharmacists, ensured accuracy in prescriptions, and optimized pharmacy workflow.</p>
-        </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="certifications">
-        <h2>Certifications</h2>
-        <div class="cert-grid">
-            <div class="cert">
-                <h3>PMP</h3>
-                <p>Project Management Professional</p>
-            </div>
-            <div class="cert">
-                <h3>CSM</h3>
-                <p>Certified Scrum Master</p>
-            </div>
-            <div class="cert">
-                <h3>SAFe POPM</h3>
-                <p>SAFe Product Owner/Product Manager</p>
+        <div class="about-inner">
+            <img class="about-photo" src="assets/profile.jpg" alt="Andie at the lake">
+            <div class="about-text">
+                <h2>About me</h2>
+                <p>Marathon runner, scuba diver, kitesurfer, and lifelong learner. I transfer attention to detail and
+                    people-first leadership from my adventures into project delivery — with certifications in PMP, CSM,
+                    and SAFe POPM.</p>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section class="skills">
-        <h2>Skills & Tech Stack</h2>
-        <div class="skill-lists">
-            <ul>
-                <h4>Management skills</h4>
-                <li>PMP</li>
-                <li>Agile</li>
-                <li>Waterfall</li>
-                <li>Scrum/SAFe</li>
-            </ul>
-            <ul>
-                <h4>Technical skills</h4>
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>SQL</li>
-            </ul>
-            <ul>
-                <h4>Soft skills</h4>
-                <li>Communication</li>
-                <li>Collaboration</li>
-                <li>Critical thinking</li>
-            </ul>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section split">
+        <div class="section-left">
+            <h2>Experience</h2>
+            <a href="resume.pdf" class="btn small">Download Resume</a>
+        </div>
+
+        <div class="section-right">
+            <div class="experience-grid">
+                <article class="card job">
+                    <h3>Purple Magnet <span class="role">— Project Coordinator</span></h3>
+                    <p class="meta">2022 – Present · Remote</p>
+                    <ul>
+                        <li>Coordinated end-to-end production schedules across multiple departments, ensuring
+                            deliverables were met on time.</li>
+                        <li>Established reporting cadence and stakeholder alignment for product launches.</li>
+                    </ul>
+                </article>
+
+                <article class="card job">
+                    <h3>Dothan Company <span class="role">— Case Manager</span></h3>
+                    <p class="meta">2018 – 2021 · Remote</p>
+                    <ul>
+                        <li>Managed caseloads and coordinated multidisciplinary teams for client care plans.</li>
+                        <li>Improved recordkeeping process, raising timely follow-up rates by X% (replace with your
+                            metric).</li>
+                    </ul>
+                </article>
+
+                <article class="card job">
+                    <h3>Private Academy <span class="role">— Literacy Coach</span></h3>
+                    <p class="meta">2015 – 2017 · Korea</p>
+                    <ul>
+                        <li>Designed curriculum and coached teachers using agile-style retrospectives for continuous
+                            improvement.</li>
+                    </ul>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section split">
+        <div class="section-left">
+            <h2>Certifications</h2>
+            <a href="resume.pdf" class="btn small">Download Resume</a>
+        </div>
+
+        <div class="section-right">
+            <div class="cert-grid">
+                <div class="card cert">
+                    <img src="assets/pmp.png" alt="PMP logo" class="cert-logo">
+                    <h4>PMP</h4>
+                    <p>Project management & governance</p>
+                </div>
+
+                <div class="card cert">
+                    <img src="assets/csm.png" alt="CSM logo" class="cert-logo">
+                    <h4>CSM</h4>
+                    <p>Scrum fundamentals & servant leadership</p>
+                </div>
+
+                <div class="card cert">
+                    <img src="assets/safe.png" alt="SAFe POPM logo" class="cert-logo">
+                    <h4>SAFe POPM</h4>
+                    <p>Program increment planning & product ownership</p>
+                </div>
+
+                <div class="card cert">
+                    <h4>Case Management Cert</h4>
+                    <p>Case management & client coordination</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & TECH STACK -->
+    <section id="skills" class="section split">
+        <div class="section-left">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="section-right">
+            <!-- Tech icons row (above the lists) -->
+            <div class="tech-stack card">
+                <img src="assets/asana.png" alt="Asana" title="Asana">
+                <img src="assets/github.png" alt="GitHub" title="GitHub">
+                <img src="assets/jira.png" alt="Jira" title="Jira">
+                <img src="assets/notion.png" alt="Notion" title="Notion">
+                <!-- Add/remove icons as needed -->
+            </div>
+
+            <!-- Skill lists -->
+            <div class="skill-lists">
+                <div class="skill-col card">
+                    <h4>Management</h4>
+                    <ul>
+                        <li>Project planning & scheduling</li>
+                        <li>Stakeholder management</li>
+                        <li>Risk & issue management</li>
+                    </ul>
+                </div>
+                <div class="skill-col card">
+                    <h4>Technical</h4>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>Basic JavaScript</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-col card">
+                    <h4>Soft skills</h4>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Coaching & mentoring</li>
+                        <li>Problem solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
     <section class="testimonials">
-        <h2>Testimonials</h2>
-        <blockquote>
-            “Andie has an incredible ability to bring clarity and structure to complex projects while keeping the team
-            motivated.”
-        </blockquote>
-        <p>- Margaret Hyler, Manager @ Purple Magnet</p>
-    </section>
-
-    <!-- Articles -->
-    <section id="articles" class="articles">
-        <h2>Articles</h2>
-        <div class="article-cards">
-            <a href="#">How I Used Kanban to Organize an ESL Program</a>
-            <a href="#">Lessons from Managing 250+ Students in Korea Using Agile Practices</a>
-            <a href="#">Using Agile to Scale Education Programs</a>
+        <div class="test-inner">
+            <h2>Testimonials</h2>
+            <blockquote class="card quote">“Andie has an incredible ability to bring clarity and structure to complex
+                projects while keeping the team motivated.”</blockquote>
+            <p class="quote-author">— Margaret Hyler, Manager · Purple Magnet</p>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Let’s talk</h2>
-        <form>
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Your email" required>
-            <textarea placeholder="A short message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>Email: <a href="mailto:andieleestokes@gmail.com">andieleestokes@gmail.com</a></p>
+    <!-- ARTICLES -->
+    <section id="articles" class="section fullwidth">
+        <div class="container">
+            <h2>Articles</h2>
+            <div class="article-grid">
+                <a class="card article" href="#">
+                    <h4>How I Used Kanban to Organize an ESL Program</h4>
+                    <p>Lessons from managing 250+ students in Korea using Agile practices.</p>
+                </a>
+
+                <a class="card article" href="#">
+                    <h4>Using Agile to Scale Education Programs</h4>
+                    <p>Tools and techniques that made incremental improvements possible.</p>
+                </a>
+
+                <a class="card article" href="#">
+                    <h4>Organizing Remote Teams: Practical Tips</h4>
+                    <p>Small rituals that keep teams connected and productive.</p>
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Andie. Project manager who drives projects forward with clarity, structure, and collaboration.</p>
+    <!-- CONTACT / LET'S TALK -->
+    <section id="contact" class="section split contact-section">
+        <div class="section-left">
+            <h2>Let's Talk</h2>
+        </div>
+
+        <div class="section-right contact-right">
+            <!-- contact form (main, left) -->
+            <div class="contact-form card">
+                <form id="contactForm" action="#" method="post" novalidate>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="A short message..."></textarea>
+
+                    <button class="btn" type="submit">Send message</button>
+                </form>
+                <p class="contact-note">Prefer email? <a href="mailto:andie.stokes@gmail.com">andie.stokes@gmail.com</a>
+                </p>
+            </div>
+
+            <!-- social links to the right of the form -->
+            <aside class="contact-social card">
+                <h4>Connect</h4>
+                <p><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></p>
+                <p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+            </aside>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Andie Stokes — Project manager focused on remote delivery and clarity.</p>
+        </div>
     </footer>
+
+    <script>
+        // small nicety: set year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Example: prevent form submission (no backend). Remove if you have a server endpoint.
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thanks — form submission is disabled in the demo. Replace the form action with your endpoint.');
+        });
+    </script>
 </body>
 
 </html>
