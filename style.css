@@ -1,0 +1,184 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.navbar nav a {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #4da0ff, #0077cc);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+.btn-primary {
+  background: white;
+  color: #0077cc;
+  font-weight: 600;
+}
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* About */
+.about {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.about img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+.about-text p {
+  font-size: 1.1rem;
+}
+
+/* Experience */
+.experience .job {
+  margin-bottom: 2rem;
+}
+.experience h3 span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  color: #555;
+}
+
+/* Certifications */
+.cert-grid {
+  display: flex;
+  gap: 2rem;
+}
+.cert {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Skills */
+.skill-lists {
+  display: flex;
+  gap: 3rem;
+}
+.skill-lists ul {
+  list-style: none;
+}
+.skill-lists h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+}
+.testimonials blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Articles */
+.article-cards {
+  display: flex;
+  gap: 2rem;
+}
+.article-cards a {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+}
+.contact input, .contact textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.contact button {
+  background: #0077cc;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
