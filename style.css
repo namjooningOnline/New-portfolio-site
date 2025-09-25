@@ -21,7 +21,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: white;
+  background: linear-gradient(135deg, #4da0ff, #0077cc);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -29,11 +29,14 @@ a {
 .navbar .logo {
   font-weight: 700;
   font-size: 1.2rem;
+  font-style: italic;
+  color: white;
 }
 .navbar nav a {
+  text-align: right;
   margin-left: 1rem;
   font-weight: 500;
-  color: #333;
+  color: white;
 }
 
 /* Hero */
@@ -41,8 +44,14 @@ a {
   background: linear-gradient(135deg, #4da0ff, #0077cc);
   color: white;
   padding: 5rem 2rem;
-  text-align: center;
+  text-align: left;
 }
+
+.hero h2 {
+  font-size: 1.25rem;
+  color:aquamarine
+}
+
 .hero h1 {
   font-size: 2rem;
   margin: 1rem 0;
@@ -57,12 +66,13 @@ a {
   display: inline-block;
 }
 .btn-primary {
-  background: white;
-  color: #0077cc;
+  border: 2px solid white;
+  border-radius: 2rem;
+  background: transparent;
+  color: white;
   font-weight: 600;
 }
 .btn-secondary {
-  border: 2px solid white;
   color: white;
   font-weight: 600;
 }
